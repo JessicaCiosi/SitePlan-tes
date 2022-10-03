@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/jquery.pageslide.css">
+</head>
+<body>
+    <div id="conteneur">
+        <header>
+            <a href="accueil.html"><img src="img/bandeau.jpg" alt="bandeau"></a>
+            <a class="open" href="#js-menu">Menu</a>
+        </header>
+            <nav id="js-menu">
+                <h1>Menu principal</h1>
+                <ul id="menu">
+                    <li>
+                        <a href="accueil.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="presentation.html">Présentation</a>
+                    </li>
+                    <li>
+                        <a href="#">Les planètes</a>
+                        <ul id="sousMenu">
+                            <li>
+                                <a href="planetesInterieures.html">Intérieures</a>
+                            </li>
+                            <li>
+                                <a href="planetesGeantes.html">Géantes</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        <main id="main2">
+            <section id="form">
+                    <h3>Contactez-nous à l'aide du formulaire ci-dessous:</h3>
+                    <form>
+                        <ul>
+                            <li>
+                                <label for="nom">Nom* : </label>
+                                <input type="text" id="nom" name="nom" required autofocus placeholder="Votre nom">
+                            </li>
+                            <li>
+                                <label for="prenom">Prénom : </label>
+                                <input type="text" id="prenom" name="prenom" placeholder="Votre prenom">
+                            </li>
+                            <li>
+                                <label for="sexe">Sexe : </label>
+                                <input class="inline" type="radio" id="homme" name="homme" value="homme">
+                                <label class="inline">Homme</label>
+                                <input class="inline" type="radio" id="femme" name="femme" value="femme" >
+                                <label class="inline">Femme</label>
+                                <input class="inline" type="radio" id="et" name="et" value="et">
+                                <label class="inline">Extra-terrestre</label>
+                            </li>
+                            <li>
+                                <label for="tel">Tél : </label>
+                                <input type="tel" id="tel" name="tel" placeholder="0123456789" maxlength="10" pattern="[0-9]{10}">
+                            </li>
+                            <li>
+                                <label for="email">E-mail* : </label>
+                                <input type="email" id="email" name="email" required placeholder="truc@machin.fr">
+                            </li>
+                            <li>
+                                <label for="date">Date : </label>
+                                <input type="date" id="date" name="date" placeholder="jj/mm/aaaa">
+                            </li>
+                            <li class="pj">
+                                <label for="pj">Pièce jointe : </label>
+                                <input type="file" id="pj" name="pj"  accept="image/*, video/*, audio/*">
+                            </li>
+                            <li>
+                                <label for="message">Votre message : </label>
+                                <textarea class="texte" name="message" id="message" cols="50" rows="10"></textarea>
+                            </li>
+                            <li id="boutons">
+                                <label></label>
+                                <input class="reset" type="reset" id="reset" name="reset" value="Réinitialiser">
+                                <input type="submit" id="valider" name="valider" value="Valider">
+                            </li>
+                        </ul>
+                    </form>
+            </section>
+                <section id="map">
+                    <h3>Contactez-nous : <br><br> Tél : 01 02 03 04 05 <br> rue du Cosmos 44049 Triton</h3>
+                        <div class="carte">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2697.2565902032557!2d-0.561269184374391!3d47.465429079175635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480878b8e7ba21f9%3A0xf0a4ea6efc45f0a0!2sCEFii%20-%20Ecole%20Sup%C3%A9rieure%20du%20Web!5e0!3m2!1sfr!2sfr!4v1594079273753!5m2!1sfr!2sfr" width="350" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                </section>
+        </main>
+        <footer>
+            <nav class="menuFooter">
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </footer>
+        <script type="text/javascript" src="js/jquery.pageslide.min.js"></script>
+	        <!--on ne met pas le script dans le head car le plug-in crée une div-->
+	    <script type="text/javascript">
+		    $(".open").pageslide();
+	    </script>
+    </div>
+</body>
+</html>

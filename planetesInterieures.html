@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Planètes Intérieures</title>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script/script3.js"></script>
+</head>
+<body>
+    <div id="conteneur">
+        <header>
+            <a href="accueil.html"><img src="img/bandeau.jpg" alt="bandeau"></a>
+        </header>
+            <nav>
+                <ul id="menu">
+                    <li>
+                        <a href="accueil.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="presentation.html">Présentation</a>
+                    </li>
+                    <li>
+                        <a href="#">Les planètes</a>
+                        <ul id="sousMenu">
+                            <li>
+                                <a href="planetesInterieures.html">Intérieures</a>
+                            </li>
+                            <li>
+                                <a href="planetesGeantes.html">Géantes</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        <main id="main4">
+            <article id="bgauche">
+                <h3>Cliquez sur les boutons pour déclencher la rotation</h3>
+                <ul>
+                    <li>
+                        <input type="button" value="Mercure" id="mercure">
+                    </li>
+                    <li>
+                        <input type="button" value="Vénus" id="venus">
+                    </li>
+                    <li>
+                        <input type="button" value="Terre" id="terre">
+                    </li>
+                    <li>
+                        <input type="button" value="Mars" id="mars">
+                    </li>
+                    <li>
+                        <input type="button" value="Animation" id="anim">
+                    </li>
+                    <li>
+                        <input type="reset" value="Reset" id="reset">
+                    </li>
+                </ul>
+            </article>
+            <article id="planetes">
+                <ul>
+                    <li class="soleil"></li>
+                    <li class="mercure"><span></span></li>
+                    <li class="venus"><span></span></li>
+                    <li class="terre"><span></span></li>
+                    <li class="mars"><span></span></li>
+                </ul>
+            </article>
+        </main>
+        <footer>
+            <nav class="menuFooter">
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>

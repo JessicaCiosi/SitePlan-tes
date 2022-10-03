@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Planètes Géantes</title>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script/script4.js"></script>
+</head>
+<body>
+    <div id="conteneur">
+        <header>
+            <a href="accueil.html"><img src="img/bandeau.jpg" alt="bandeau"></a>
+        </header>
+            <nav>
+                <ul id="menu">
+                    <li>
+                        <a href="accueil.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="presentation.html">Présentation</a>
+                    </li>
+                    <li>
+                        <a href="#">Les planètes</a>
+                        <ul id="sousMenu">
+                            <li>
+                                <a href="planetesInterieures.html">Intérieures</a>
+                            </li>
+                            <li>
+                                <a href="planetesGeantes.html">Géantes</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        <main>
+            <h3>Cliquez sur les planètes pour plus d'infos</h3>
+        <article id="pGeantes">
+            <div id="jupiter" class="zoom">
+                <img src="img/jupiter.png" alt="jupiter">
+                <h3>Jupiter</h3>
+            </div>
+            <div id="saturne" class="zoom">
+                <img src="img/saturne.png" alt="saturne">
+                <h3>Saturne</h3>
+            </div>
+            <div id="uranus" class="zoom">
+                <img src="img/uranus.png" alt="uranus">
+                <h3>Uranus</h3>
+            </div>
+            <div id="neptune" class="zoom">
+                <img src="img/neptune.png" alt="neptune">
+                <h3>Neptune</h3>
+            </div>
+        </article>
+        </main>
+        <footer>
+            <nav class="menuFooter">
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+    <div id="popup">
+        <div id="contenuPopup">
+            <img src="img/jupiter.png" alt="jupiter" />
+            <h3>Jupiter</h3>
+            <p>Lorem ipsum dolor si amet, consectetur adipisicing elit. Quis, eum, obcaecati inventore reiciendis vel voluptates excepturi ut nisi neque ipsam. Vero sed ipsa ratione voluptatum ad corporis. Adipisci, vero, fugit.</p>
+            <p>Lorem ipsum dolor si amet, consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor si amet, consectetur adipisicing elit. Quis, eum, obcaecati inventore reiciendis vel voluptates excepturi ut nisi neque ipsam. Vero sed ipsa ratione voluptatum ad corporis. Adipisci, vero, fugit.</p>
+            <p>Lorem ipsum dolor si amet, consectetur adipisicing elit.</p>
+        </div>
+        <span>X</span>
+    </div>
+</body>
+</html>

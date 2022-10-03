@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Accueil</title>
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/jquery.pageslide.css">
+    <script src="script/script1.js"></script>
+
+</head>
+<body>
+    <div id="conteneur">
+        <header>
+            <a href="accueil.html"><img src="img/bandeau.jpg" alt="bandeau"></a>
+            <a class="open" href="#js-menu">Menu</a>
+        </header>
+            <nav id="js-menu">
+                <h1>Menu principal</h1>
+                <ul id="menu">
+                    <li>
+                        <a href="accueil.html">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="presentation.html">Présentation</a>
+                    </li>
+                    <li>
+                        <a href="#">Les planètes</a>
+                        <ul id="sousMenu">
+                            <li>
+                                <a href="planetesInterieures.html">Intérieures</a>
+                            </li>
+                            <li>
+                                <a href="planetesGeantes.html">Géantes</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        <main id="main1">
+        <section id="gauche">
+            <ul>
+                <li>
+                    <h3>Consigne 1</h3>
+                    <p>Procedente igitur mox tempore cum adventicium nihil inveniretur, relicta ora maritima in Lycaoniam adnexam Isauriae se contulerunt ibique densis intersaepientes itinera praetenturis provincialium et viatorum opibus pascebantur.</p>
+                </li>
+                <li>
+                    <h3>Consigne 2</h3>
+                    <p>Procedente igitur mox tempore cum adventicium nihil inveniretur, relicta ora maritima in Lycaoniam adnexam Isauriae se contulerunt ibique densis intersaepientes itinera praetenturis provincialium et viatorum opibus pascebantur.</p>
+                </li>
+                <li>
+                    <h3>Consigne 3</h3>
+                    <p>Procedente igitur mox tempore cum adventicium nihil inveniretur, relicta ora maritima in Lycaoniam adnexam Isauriae se contulerunt ibique densis intersaepientes itinera praetenturis provincialium et viatorum opibus pascebantur.</p>
+                </li>
+                <li>
+                    <h3>Info</h3>
+                    <p>Mercure est à 58 millions de km du soleil et en fait le tour en 88 jours.
+                    </br>Vénus : 108 M km / 225 jours.
+                    </br>Terre : 149 M km / 365 jours.
+                    </br>Mars : 228 M km / 687 jours.
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <section id="droite">
+            
+            <article class="top">
+            <h3>Bienvenue sur la planète HTML-CSS-jQuery</h3>
+            <img src="img/espace.jpg" alt="espace">
+            </article>
+
+            <article class="bottom">
+                <figure class="wiki"><img src="img/soleil.jpg" alt="soleil">
+                    <figcaption><a href="https://fr.wikipedia.org/wiki/Soleil" target="blank">Le soleil</a></figcaption>
+                </figure>
+                <figure class="wiki"><img src="img/comete.jpg" alt="comete">
+                    <figcaption><a href="https://fr.wikipedia.org/wiki/Com%C3%A8te" target="blank">Les comètes</a></figcaption>
+                </figure>
+                <figure class="wiki"><img src="img/galaxie.jpg" alt="galaxie">
+                    <figcaption><a href="https://fr.wikipedia.org/wiki/Galaxie" target="blank">Les galaxies</a></figcaption>
+                </figure>
+            </article>
+
+        </section>
+        </main>
+        <footer>
+            <nav class="menuFooter">
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </footer>
+        <div id="cosmonaute"></div>
+        <script type="text/javascript" src="js/jquery.pageslide.min.js"></script>
+	        <!--on ne met pas le script dans le head car le plug-in crée une div-->
+	    <script type="text/javascript">
+		    $(".open").pageslide();
+	    </script>
+    </div>
+</body>
+</html>
